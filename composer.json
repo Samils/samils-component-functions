@@ -1,0 +1,39 @@
+{
+	"name": "samils/samils-component-functions",
+	"version": "1.0.1",
+	"description": "A set of Samils helpers",
+  "type": "library",
+	"license": "MIT",
+  "minimum-stability": "dev",
+	"keywords": [
+    "samils",
+    "ils-functions",
+    "samils-fn",
+    "samils helpers"
+  ],
+	"autoload": {
+		"files": [
+      "src/index.php"
+    ]
+	},
+  "homepage": "https://github.com/samils/samils-component-functions",
+  "readme": "./README.md",
+  "authors": [
+    {
+      "name": "Agostinho Lopes",
+      "email": "agostinhosaml832@gmail.com",
+      "homepage": "https://agostinhosamil.github.io",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "base.samils@gmail.com",
+    "issues": "https://github.com/samils/samils-component-functions/issues",
+    "wiki": "https://github.com/samils/samils-component-functions/wiki"
+  },
+	"require": {
+		"php": ">=5.6.20",
+    "php_modules/request-input": "dev-main",
+    "samils/callable-object": "dev-main"
+	}
+}
