@@ -1369,7 +1369,7 @@ if (!function_exists ('str')) {
  */
 function str ($data = null) {
   if (in_array (gettype ($data), ['array', 'object'])){
-    return json_encode (lean_data ($data));
+    return json_encode (lean_object ($data));
   } elseif (is_bool ($data)) {
     return $data ? 'true' : 'false';
   }

@@ -32,8 +32,6 @@
     "wiki": "https://github.com/samils/samils-component-functions/wiki"
   },
 	"require": {
-		"php": ">=5.6.20",
-    "php_modules/request-input": "dev-main",
-    "samils/callable-object": "dev-main"
+		"php": ">=5.6.20"
 	}
 }
