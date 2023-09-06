@@ -1322,7 +1322,7 @@ function camel2snakecase ($string = null) {
  * @Function Description: Get the page url
  * @Function Args: $path = null
  */
-if (!function_exists ('url')) {
+if (!function_exists ('url') && is_samils_environment ()) {
 /**
  * @version 1.0
  *
