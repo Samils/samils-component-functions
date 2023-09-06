@@ -47,8 +47,48 @@
  * when trying to run the current command by the cli
  * API.
  * ----
+ * @Function Name: is_samils_environment
+ * @Function Description: Verify if the current execution is in an Samils environment
+ * @Function Args:
+ */
+if (!function_exists ('is_samils_environment')) {
+/**
+ * @version 1.0
+ *
+ * THE CURRENT SML FUNCTION IS PROVIDED
+ * TO AID THE DEVELOPMENT PROCESS IN ORDER
+ * IT GET IN THE SAME WAY WHEN MOVING IT FROM
+ * ANOTHER TO ANOTHER ENVIRONMENT.
+ *
+ * Note: on condition that this is an automatically
+ * generated file, it should not be directly changed
+ * without saving whole the changes into the original
+ * repository source.
+ *
+ * @author Ag
+ * @keywords Function Keywords
+ */
+function is_samils_environment () {
+  return defined ('Samils\Datas\Consts\SAMILS_ENVIRONMENT_VERSION');
+}}
+/**
+ * Samils\Functions
+ * @version 1.0
+ * @author Sammy
+ *
+ * @keywords Samils, ils, ils-global-functions
+ * ------------------------------------
+ * - Autoload, application dependencies
+ *
+ * Make sure the command base internal function is not
+ * declared in the php global scope defore creating
+ * it.
+ * It ensures that the script flux is not interrupted
+ * when trying to run the current command by the cli
+ * API.
+ * ----
  * @Function Name: func
- * @Function Description: Create a closure
+ * @Function Description: Get The current timestamp
  * @Function Args:
  */
 if (!function_exists ('func')) {
@@ -131,7 +171,7 @@ function current_timestamp () {
  * @Function Description: get a param sent to the current request
  * @Function Args: $paramName = null
  */
-if (!function_exists ('param')) {
+if (!function_exists ('param') && is_samils_environment ()) {
 /**
  * @version 1.0
  *
@@ -1610,7 +1650,7 @@ function array_to_object ($array = null) {
  * @Function Description: Read a path from a given string
  * @Function Args: $path, $trace = null
  */
-if (!function_exists ('path')) {
+if (!function_exists ('path') && is_samils_environment ()) {
 /**
  * @version 1.0
  *
